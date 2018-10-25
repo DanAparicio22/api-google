@@ -8,8 +8,8 @@ const CONFIG = {
         client_secret: 'jguDoQ2b7JGtIFPujfoQZ_VI'
     },
     redirectionalUrls: {
-        suscription: 'http://localhost:1234/suscription',
-        creation: 'http://localhost:1234/creation'
+        suscription: 'https://glacial-badlands-66148.herokuapp.com/suscription',
+        creation: 'https://glacial-badlands-66148.herokuapp.com/creation'
     }
 }
 
