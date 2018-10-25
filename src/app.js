@@ -6,7 +6,7 @@ var app = express();
 var port = 1234;
 var server = http.createServer(app);
 
-server.listen(port);
+server.listen(process.env.PORT || port);
 routes(app);
 
 server.on('listening', function () {
