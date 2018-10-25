@@ -4,6 +4,10 @@ var URI = require("uri-js");
 
 module.exports = function(app) {
 
+    app.get('/', function(req, res) {
+        res.send("Api execution success!");
+    });
+
     app.get('/courses/create/:name/:description', function(req, res) {
         var url = classroom.getAuthUrl(URI.serialize(URI.parse(config.redirectionalUrls.creation+'/'+ req.params.name + '/' + req.params.description)));
         res.send({ url: url });
