@@ -3,6 +3,8 @@ var express = require('express');
 var routes = require('./courses/index');
 
 var app = express();
+var cors = require('cors');
+app.use(cors());
 var port = 1234;
 var server = http.createServer(app);
 
