@@ -4,7 +4,7 @@ var URI = require("uri-js");
 
 module.exports = function(app) {
 
-    app.get('/', function(req, res) {
+    app.get('', function(req, res) {
         res.send("Api execution success!");
     });
 
